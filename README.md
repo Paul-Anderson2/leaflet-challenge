@@ -6,5 +6,5 @@ The USGS is interested in building a new set of tools that will allow them to vi
 For this challenge, I used the 'past 30 days with magnitude of 1+ earthquake data : https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_month.geojson      
 
 I also chose to highlight the tectonic plates in black to help show the relationship betwen the locations of the plates and the location of the earthquakes.      
-Noted that the vast majority of 1+ magnitude earthquakes have a depth of less than 10 feet. Deeper quakes only seem to occur right along the faultines, and these are generally of magnitude as well. 
+Noted that the vast majority of 1+ magnitude earthquakes have a depth of less than 10 feet. Deeper quakes only seem to occur right along the faultines, and these are generally of higher magnitude as well. 
 
