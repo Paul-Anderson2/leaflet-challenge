@@ -60,11 +60,11 @@ function chooseRadius(magnitude) {
 
 
 //defining popup when markers are clicked
-// Popups yields Earthquake ID, Magnitude, Location, and depth of each earthquake taken from json data
+// Popups yield Earthquake ID, Magnitude, Location, and depth of each earthquake taken from json data
 d3.json(url).then(function (data) { //pull the earthquake JSON data with d3
     L.geoJson(data, {
         pointToLayer: function (feature, latlon) {  //declare a point to layer function that takes a feature and latlon
-            return L.circleMarker(latlon).bindPopup("<h3> ID : " + feature.id + "<h3> Magnitude : " +feature.properties.mag + "<h3> Location :" + feature.properties.place + "<h3> Depth (km): " + feature.geometry.coordinates[2]); 
+            return L.circleMarker(latlon).bindPopup("<h3> ID : " + feature.id + "<h3> Magnitude : " + feature.properties.mag + "<h3> Location :" + feature.properties.place + "<h3> Depth (km): " + feature.geometry.coordinates[2]); 
         },
         style: styleInfo //call the style function we defined above
     }).addTo(earthquake_data); // pull the earthquake data
@@ -77,7 +77,7 @@ d3.json(url).then(function (data) { //pull the earthquake JSON data with d3
     d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json").then(function (data) { 
         L.geoJson(data, {
             color: "black", 
-            weight: 3
+            weight: 2
         }).addTo(tectonics);
         tectonics.addTo(myMap);
     });
