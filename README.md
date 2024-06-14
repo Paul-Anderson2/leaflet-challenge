@@ -9,3 +9,6 @@ I also chose to highlight the tectonic plates in black to help show the relation
 The tectonic plate information was obtained at  : https://github.com/fraxen/tectonicplates 
 Noted that the vast majority of 1+ magnitude earthquakes have a depth of less than 10 feet. Deeper quakes only seem to occur right along the faultines, and these are generally of higher magnitude as well. 
 
+
+Repo is deployed at https://paul-anderson2.github.io/leaflet-challenge/ 
+
